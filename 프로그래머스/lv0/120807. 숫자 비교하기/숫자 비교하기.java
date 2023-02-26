@@ -3,11 +3,7 @@ class Solution {
         int answer = 0;
         boolean val = (0<=num1&&num1<=10000) || (0<=num2&&num2<=10000);
         if(val) {
-            if(num1==num2){
-                return 1;
-            } else {
-                return -1;
-            }
+            answer = num1==num2 ? 1 : -1;
         }
         return answer;
     }
